@@ -1,0 +1,33 @@
+module sum(input reg[11:0]a,b,output reg[11:0]sum);
+	always @(*) 
+	begin
+	sum = a + b;
+	end
+endmodule
+
+module CMP(input reg[11:0]sum,c,output reg[2:0]result);
+	always @(*)
+	begin
+	result[0] = (sum < c); //sum less than c, 001
+	result[1] = (sum == c);//sum equal to c, 010
+	result[2] = (sum > c);//sum greater than c, 100
+	end
+endmodule 
+
+module datapath(input reg[11:0]a,b,c,
+		output[2:0]result);
+	
+	wire[11:0]sum;
+	
+	sum inst0(
+		.a(a),
+		.b(b),
+		.sum(sum));
+	
+	CMP inst1(
+		.sum(sum),
+		.c(c),
+		.result(result));
+endmodule
+
+

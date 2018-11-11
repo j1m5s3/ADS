@@ -1,0 +1,17 @@
+C:/Users/j1m5s/OneDrive/Desktop/ADS/assignment3/datapath.v {1 {vlog -work work -stats=none C:/Users/j1m5s/OneDrive/Desktop/ADS/assignment3/datapath.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sum
+-- Compiling module CMP
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} C:/Users/j1m5s/OneDrive/Desktop/ADS/assignment3/datapath_tb.v {1 {vlog -work work -stats=none C:/Users/j1m5s/OneDrive/Desktop/ADS/assignment3/datapath_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module datapath_tb
+
+Top level modules:
+	datapath_tb
+
+} {} {}}
